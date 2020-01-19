@@ -25,6 +25,11 @@ namespace Rotas
                 defaults: new { controller = "Home", Action = "MostraCategoria" }
              );
 
+            routes.MapRoute(
+                name: "Mostra Noticia",
+                url: "noticias/{categoria}/{titulo}-{noticiaId}",
+                defaults: new { controller = "Home", Action = "MostraNoticia" }
+             );
 
             routes.MapRoute(
                 name: "Default",
